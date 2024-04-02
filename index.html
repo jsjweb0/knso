@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+	<meta name="application-name" content="국립심포니오케스트라" />
+	<meta name="description" content="클래식의 다채로운 경험 국립심포니오케스트라와 함께 하세요." />
+	<meta name="keywords" content="국립,심포니,오케스트라,국립심포니,심포니오케스트라,코리안심포니,교향악단,클래식" />
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no" />
+	<meta property="og:url" content="http://www.koreansymphony.com/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="국립심포니오케스트라" />
+	<meta property="og:description" content="클래식의 다채로운 경험 국립심포니오케스트라와 함께 하세요." />
+	<meta property="og:image" content="./images/common/logo.png" />
+	<meta property="og:site_name" content="국립심포니오케스트라" />
+	<title>KNSO국제아카데미</title>
+	<link rel="canonical" href="http://www.koreansymphony.com/">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/common.css" />
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./js/common.js"></script>
+</head>
+
+<body>
+	<div class="skipNav">
+		<p><a href="#container">본문 바로가기</a></p>
+	</div>
+	<div id="wrap" class="PAT0">
+		<div class="overlayBg"></div>
+		<header id="headerWrap">
+			<div class="header">
+				<h1 class="logo"><a href="../index.html">국립심포니오케스트라(KOREAN NATIONAL SYMPHONY ORCHESTRA)</a></h1>
+				<p class="btnMoGnb"><button type="button"><i class="top"></i><i class="mid"></i><i class="btm"></i>메뉴펼치기</button></p>
+				<div class="utilWrap">
+					<ul class="util">
+						<li><button type="button" title="사이트 언어 선택" class="siteBtn">KOR</button>
+							<div class="langList">
+								<ul>
+									<li><a href="#">ENG</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<nav class="gnbWrap">
+					<div class="gnb">
+						<h2 class="blind">주메뉴</h2>
+						<h3>KNSO국제아카데미</h3>
+						<ul class="gnbList">
+							<li><a href="#container">소개</a></li>
+							<li><a href="#curriculum">교육과정</a></li>
+							<li><a href="#mentor">멘토</a></li>
+							<li><a href="010101.html">아카이브</a>
+								<div class="subMenu">
+									<ul>
+										<li><a href="010101.html" target="blank" title="새창">2022</a></li>
+										<li><a href="010102.html" target="blank" title="새창">2021</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="moMenu"><a href="0102.php">KNSO 작곡가 아틀리에</a></li>
+							<li class="moMenu"><a href="#">KNSO 국제지휘콩쿠르</a></li>
+							<li class="moMenu"><a href="0104.php">KNSO 지휘자 워크숍</a></li>
+						</ul>
+						<p class="moGnbClose"><button type="button">메뉴 닫기</button></p>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<div id="container">
+				<div class="visualFull">
+					<div class="swiper visualSlide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./images/bg_top2.jpg" alt="KNSO국제아카데미 세계를 무대로 오케스트라 단원을 꿈꾸는 젊은 음악가들의 경험과 기회 확장을 위해 1년간 집중 오케스트라 교육을 시행한다.<br> 세션과 파트로 나뉘어 개인과 그룹, 실내악 앙상블과 오케스트라 수업이 진행되며 선배 음악가와의 만남, 음악가를 위한 신체 관리 및 정신 훈련, 모의 오디션, 자기소개 글쓰기 등 현장 중심의 음악 교육이 진행된다. 만 34세 이하의 대학교 졸업 예정자 및 졸업생을 대상으로 연초마다 모집한다."></div>
+							<div class="swiper-slide">
+								<div class="vidContainer" data-url="dUh1YJ6dHrU" data-time="313"></div>
+							</div>
+						</div>
+						<button type="button" class="btnPrev"><span>PREV</span></button>
+						<button type="button" class="btnNext"><span>NEXT</span></button>
+						<div class="visual-pagination"></div>
+					</div>
+					<script>
+						var tag = document.createElement("script");
+						tag.src = "https://www.youtube.com/iframe_api";
+						var firstScriptTag = document.getElementsByTagName('script')[0];
+						firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+						var idAry = [],
+							urlAry = [],
+							objAry = [];
+
+						$(".vidContainer").each(function(i) {
+							$(this).attr("id", "player" + i);
+							idAry.push("player" + i);
+							urlAry.push($(this).data("url"));
+							let duration = $(this).attr('data-time');
+							if (duration != null || duration != undefined) {
+								$(this).closest('.swiper-slide').attr('data-swiper-autoplay', Math.floor(duration) * 1000);
+							}
+						});
+
+						function onYouTubeIframeAPIReady() {
+							for (let i = 0; i < $(".vidContainer").length; i++) {
+								var player;
+								var playerId = idAry[i];
+								player = new YT.Player(playerId, {
+									videoId: urlAry[i],
+									width: "100%",
+									height: "100%",
+									playerVars: {
+										rel: 0,
+										autoplay: 1,
+										mute: 0,
+										controls: 0
+									},
+									events: {
+										'onReady': onPlayerReady
+									}
+								});
+								objAry.push(player);
+							}
+
+							var visualSwiper = new Swiper(".visualSlide", {
+								autoplay: {
+									pauseOnMouseEnter: true,
+									delay: 3000,
+								},
+								effect: 'fade',
+								navigation: {
+									nextEl: '.visualSlide .btnNext',
+									prevEl: '.visualSlide .btnPrev',
+								},
+								pagination: {
+									el: ".visual-pagination",
+									type: "fraction",
+									clickable: true
+								},
+								a11y: {
+									enabled: true,
+									prevSlideMessage: '이전 슬라이드',
+									nextSlideMessage: '다음 슬라이드',
+								},
+								breakpoints: {
+									767: {
+										autoHeight: true
+									},
+								},
+								on: {
+									init: function() {
+										let sl = this.slides[this.realIndex];
+										let videoCheck = sl.querySelector('iframe');
+										if (videoCheck != null || videoCheck != undefined) {
+											objAry[0].addEventListener('onReady', onPlayerReady);
+
+										}
+									},
+									transitionStart: function() {
+										objAry.forEach(function(element) {
+											element.stopVideo();
+										});
+									},
+									transitionEnd: function() {
+										let slide = visualSwiper.slides[visualSwiper.realIndex];
+
+										var slideVideo = slide.querySelector('iframe');
+
+										if (slideVideo != null || slideVideo != undefined) {
+											var slideVideoId = slideVideo.getAttribute('id');
+											let idid = idAry.indexOf(slideVideoId);
+											objAry[idid].mute();
+											objAry[idid].playVideo();
+										}
+
+									}
+								}
+							});
+						} // onYouTubeIframeAPIReady end
+
+						function onPlayerReady(event) {
+							event.target.mute();
+							event.target.playVideo();
+						}
+
+					</script>
+				</div>
+
+				<div class="academyLayout">
+					<div class="innerWrap">
+						<div id="curriculum" class="customList">
+							<div class="item first">
+								<h3 class="acTit"><span>KNSO CURRICULUM</span>교육과정</h3>
+								<div class="cont">
+									<div class="imgSlider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+										</div>
+										<div class="controls">
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+									<p class="tit">공연</p>
+									<p class="txt">국립심포니오케스트라 정기연주와 오페라·발레 등 공연 참여를 통해 다양한 오케스트라 레퍼토리 및 파트 내 역할 역량을 강화합니다.</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="cont">
+									<div class="imgSlider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+										</div>
+										<div class="controls">
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+									<p class="tit">1:1 멘토링 및 마스터클래스</p>
+									<p class="txt">오케스트라 내에서의 역량 강화를 위해 국립심포니오케스트라 단원들과의 1:1 멘토링 및 해외 유명 연주자와의 마스터클래스를 진행합니다.</p>
+								</div>
+								<div class="cont">
+									<div class="imgSlider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+										</div>
+										<div class="controls">
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+									<p class="tit">워크숍 및 렉처</p>
+									<p class="txt">국내외 음악가들의 렉처를 통해 음악 세계 및 가치관 등을 들여다보며, 신체 관리 및 멘탈 트레이닝 워크숍 등을 통해 직업 음악가들에게 필요한 소양을 배웁니다.</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="cont">
+									<div class="imgSlider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+										</div>
+										<div class="controls">
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+									<p class="tit">모의오디션</p>
+									<p class="txt">오디션에 대한 실전 경험을 통해 예술감독 및 멘토들의 생생한 피드백을 듣고, 강점과 약점을 정확히 파악하여 개인의 역량을 강화합니다.</p>
+								</div>
+								<div class="cont">
+									<div class="imgSlider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+											<div class="swiper-slide"><img src="https://dummyimage.com/600x400/" alt=""></div>
+										</div>
+										<div class="controls">
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+									<p class="tit">국제 교류 및 한국 문화 체험</p>
+									<p class="txt">다국적인 연주자들이 함께 모여 각자의 문화를 교류하는 시간을 갖고 박물관 방문, 체험학습 및 전통 공연 관람을 통해 한국의 문화를 경험합니다.</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="mentor" class="listType">
+							<div class="cateList">
+								<h3 class="acTit">멘토</h3>
+								<ul>
+									<li><a href="javascript:;" class="active"><span>전체</span>(22)</a></li>
+									<li><a href="javascript:;"><span>제1바이올린</span>(3)</a></li>
+									<li><a href="javascript:;"><span>제2바이올린</span>(2)</a></li>
+									<li><a href="javascript:;"><span>비올라</span>(2)</a></li>
+									<li><a href="javascript:;"><span>첼로</span>(2)</a></li>
+									<li><a href="javascript:;"><span>더블베이스</span>(2)</a></li>
+									<li><a href="javascript:;"><span>플루트</span>(1)</a></li>
+									<li><a href="javascript:;"><span>오보에</span>(1)</a></li>
+									<li><a href="javascript:;"><span>클라리넷</span>(1)</a></li>
+									<li><a href="javascript:;"><span>바순</span>(1)</a></li>
+									<li><a href="javascript:;"><span>호른</span>(1)</a></li>
+									<li><a href="javascript:;"><span>트럼펫</span>(1)</a></li>
+									<li><a href="javascript:;"><span>트롬본</span>(2)</a></li>
+									<li><a href="javascript:;"><span>팀파니</span>(1)</a></li>
+									<li><a href="javascript:;"><span>타악기</span>(2)</a></li>
+								</ul>
+							</div>
+							<ul class="list">
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="김민균"></p>
+									<p class="tit">김민균</p>
+									<p class="txt"><i>제1바이올린</i><span class="role">악장</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이지수"></p>
+									<p class="tit">이지수</p>
+									<p class="txt"><i>제1바이올린</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이유민"></p>
+									<p class="tit">이유민</p>
+									<p class="txt"><i>제1바이올린</i><span class="role">부수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="박진희"></p>
+									<p class="tit">박진희</p>
+									<p class="txt"><i>제2바이올린</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="박나은"></p>
+									<p class="tit">박나은</p>
+									<p class="txt"><i>제2바이올린</i><span class="role">부수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="여수은"></p>
+									<p class="tit">여수은</p>
+									<p class="txt"><i>비올라</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이무열"></p>
+									<p class="tit">이무열</p>
+									<p class="txt"><i>비올라</i><span class="role">부수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이경진"></p>
+									<p class="tit">이경진</p>
+									<p class="txt"><i>첼로</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="최정우"></p>
+									<p class="tit">최정우</p>
+									<p class="txt"><i>첼로</i><span class="role">부수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이재준"></p>
+									<p class="tit">이재준</p>
+									<p class="txt"><i>더블베이스</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="손치호"></p>
+									<p class="tit">손치호</p>
+									<p class="txt"><i>더블베이스</i><span class="role">부수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이미선"></p>
+									<p class="tit">이미선</p>
+									<p class="txt"><i>플루트</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이인영"></p>
+									<p class="tit">이인영</p>
+									<p class="txt"><i>오보에</i><span class="role">부수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="박정환"></p>
+									<p class="tit">박정환</p>
+									<p class="txt"><i>클라리넷</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="표규선"></p>
+									<p class="tit">표규선</p>
+									<p class="txt"><i>바순</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="윤승호"></p>
+									<p class="tit">윤승호</p>
+									<p class="txt"><i>호른</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="조규형"></p>
+									<p class="tit">조규형</p>
+									<p class="txt"><i>트럼펫</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="정대환"></p>
+									<p class="tit">정대환</p>
+									<p class="txt"><i>트롬본</i><span class="role">부수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="고영석"></p>
+									<p class="tit">고영석</p>
+									<p class="txt"><i>베이스트롬본</i></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="김한규"></p>
+									<p class="tit">김한규</p>
+									<p class="txt"><i>팀파니</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="김범태"></p>
+									<p class="tit">김범태</p>
+									<p class="txt"><i>타악기</i><span class="role">수석</span></p>
+								</li>
+								<li>
+									<p class="img"><img src="https://dummyimage.com/375x375/" alt="이창섭"></p>
+									<p class="tit">이창섭</p>
+									<p class="txt"><i>타악기</i><span class="role">부수석</span></p>
+								</li>
+							</ul>
+						</div>
+						<!--//멘토-->
+
+					</div>
+				</div>
+				<script>
+					// 멘토 카테고리
+					$(".cateList").find("a").on("click", function() {
+						const currentTxt = $(this).find("span").text();
+						$(".cateList").find("a").removeClass("active");
+						$(this).addClass("active");
+						$(".cateList").closest(".listType").find(".list>li").hide();
+						if (currentTxt == "전체" || currentTxt == "All") {
+							$(".cateList").closest(".listType").find(".list>li").removeAttr("style");
+						} else {
+							$(this).parents(".listType").find(".list>li").each(function() {
+								const listTxt = $(this).find("i").text();
+								if (listTxt == currentTxt) {
+									$(this).fadeIn();
+								}
+							});
+						}
+					});
+
+					// 교육과정
+					let slidesLength
+					const imgSlide = document.querySelectorAll('.imgSlider');
+					for (i = 0; i < imgSlide.length; i++) {
+						imgSlide[i].classList.add('swiper-container-' + i);
+						const imgSlider = new Swiper('.swiper-container-' + i, {
+							slidesPerView: 1,
+							autoplay: {
+								autoplayDisableOnInteraction: true,
+								disableOnInteraction: false,
+							},
+							navigation: {
+								nextEl: ".swiper-button-next",
+								prevEl: ".swiper-button-prev",
+							},
+							pagination: {
+								el: ".swiper-pagination",
+								type: "fraction",
+								clickable: true
+							},
+							watchOverflow: true,
+							//loop: true,
+							a11y: {
+								enabled: true,
+								prevSlideMessage: '이전 슬라이드',
+								nextSlideMessage: '다음 슬라이드',
+								slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+							},
+							observer: true,
+							observeParents: true
+						});
+						imgSlider.update();
+					}
+
+				</script>
+			</div>
+		</main>
+		<footer class="acFooter">
+			<div class="ftWrap">
+				<div class="ftlogo"><a href="http://www.koreansymphony.com/" target="_blank"><img src="./images/logo_gray.png" alt="국립심포니오케스트라 KOREAN NATIONAL SYMPHONY ORCHESTRA"></a></div>
+				<div class="ftAddr">
+					<address>
+						서울특별시 서초구 남부순환로 2406(서초동) 예술의전당
+					</address>
+					<span>사업자등록번호 : 214-82-06462 대표 : 최정숙</span>
+					<ul>
+						<li>Tel. 02-523-4671</li>
+						<li>Fax. 02-523-6259</li>
+						<li>E-mail. audition@knso.or.kr</li>
+					</ul>
+					<p>© 2021 by Korean National Symphony Orchestra. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
